@@ -1,5 +1,7 @@
+document.title = "Esta página dice: ";
+
 /* Prompt */
-let nombre = prompt("Ingrese su nombre");
+let nombre = prompt("Ingrese su nombre y apellido");
 let carrera = prompt("Ingrese su carrera");
 
 let NotaHTML1 = prompt("Ingrese nota 1 [HTML]");
@@ -35,31 +37,32 @@ let promedio2 = document.getElementById("promedioCSS");
 let promedio3 = document.getElementById("promedioJS");
 
 /* valores */
-nom.innerHTML = nombre;
-profesion.innerHTML = carrera;
 
-notaHTML1.innerHTML = NotaHTML1;
-notaHTML2.innerHTML = NotaHTML2;
-notaHTML3.innerHTML = NotaHTML3;
+nom.innerHTML = nombre || "-";
+profesion.innerHTML = carrera || "-";
 
-notaCSS1.innerHTML = NotaCSS1;
-notaCSS2.innerHTML = NotaCSS2;
-notaCSS3.innerHTML = NotaCSS3;
+notaHTML1.innerHTML = NotaHTML1 || "-";
+notaHTML2.innerHTML = NotaHTML2 || "-";
+notaHTML3.innerHTML = NotaHTML3 || "-";
 
-notaJS1.innerHTML = NotaJS1;
-notaJS2.innerHTML = NotaJS2;
-notaJS3.innerHTML = NotaJS3;
+notaCSS1.innerHTML = NotaCSS1 || "-";
+notaCSS2.innerHTML = NotaCSS2 || "-";
+notaCSS3.innerHTML = NotaCSS3 || "-";
+
+notaJS1.innerHTML = NotaJS1 || "-";
+notaJS2.innerHTML = NotaJS2 || "-";
+notaJS3.innerHTML = NotaJS3 || "-";
 
 
 /* promedio */
 let promedioHTML = document.getElementById("promedioHTML");
 let promHTML = (parseInt(NotaHTML1) + parseInt(NotaHTML2) + parseInt(NotaHTML3))/3;
-promedioHTML.innerHTML = promHTML;
+promedioHTML.innerHTML = isNaN(promHTML) ? "-": promHTML.toFixed(2);
 
 let promedioCSS = document.getElementById("promedioCSS")
 let promCSS = (parseInt(NotaCSS1) + parseInt(NotaCSS2) + parseInt(NotaCSS3))/3;
-promedioCSS.innerHTML = promCSS;
+promedioCSS.innerHTML = isNaN(promCSS) ? "-": promCSS.toFixed(2);
 
 let promedioJS = document.getElementById("promedioJS")
 let promJS = (parseInt(NotaJS1) + parseInt(NotaJS2) + parseInt(NotaJS3))/3;
-promedioJS.innerHTML = promJS;
+promedioJS.innerHTML = isNaN(promJS) ? "-": promJS.toFixed(2);
