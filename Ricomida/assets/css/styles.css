@@ -1,0 +1,75 @@
+:root {
+--dark-gray: #373a3c;
+--light-gray: #dddddd;
+--black: #000;
+--white: #fff;
+--danger: #dc3545;
+}
+
+.cabin-regular {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    color: black;
+}
+.cabin-regular-white {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+}
+
+.cabin-bold {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    color: black;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 37px !important;
+    color: white !important;
+}
+
+.ms-lg-auto {
+    margin-left: auto !important;
+}
+
+.me-lg-auto {
+    margin-right: auto !important;
+}
+
+.navbar-nav .nav-link {
+    color:white !important;
+}
+
+.container {
+    padding-left: 10%;
+}
+.header-image {
+    width: 482px;
+    height: 384px;
+}
+
+.pizza-title {
+    margin-bottom: 16px;
+}
+
+.border-bottom-custom {
+    border-bottom: 1px solid var(--dark-gray);
+    margin-bottom: 10px;
+    
+}.btn {
+    display: flex;
+    justify-content: center;
+
+}
